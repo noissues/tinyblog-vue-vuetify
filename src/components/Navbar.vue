@@ -31,7 +31,7 @@
       <v-btn to="/add" text>
         <span class="subtitle-1 grey--text text--darken-2">写文章</span>
       </v-btn>
-      <v-btn to="" text>
+      <v-btn @click="goToGitHub" text>
         <v-icon class="grey--text text--darken-2"> mdi-github </v-icon>
       </v-btn>
     </div>
@@ -50,6 +50,9 @@ export default {
 
   methods: {
     searchByParam() {
+    },
+    goToGitHub() {
+        window.location.href ="https://gitee.com/noissues/tinyblog-vue-vuetify.git";
     },
   },
 };
